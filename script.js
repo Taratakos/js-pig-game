@@ -1,9 +1,20 @@
 'use strict';
-/*
-// 82. PROJECT #3: Pig Game
-// when we're selecting using an ID. Then there's actually another way of selecting an element.
-// And so in this case, we are making it really clear that this is a DOM element.
 
+// Пошук по id (id - це унікальний атрибут який може присвоюватись тегу, але його ім'я повинне бути унікальним)
+// const elemsSeven = document.querySelectorAll('#listItem'); // в такому випадку ми отримаємо лише один об'єкт якщо він є на сторінці
+
+// Selecting elements
+const score0El = document.querySelector('#score--0');
+const score1El = document.getElementById('score--1');
+const diceEl = document.querySelector('.dice');
+
+// Setting initial conditions
+score0El.textContent = 0;
+score1El.textContent = 0;
+diceEl.classList.add('hidden');
+// diceEl.textContent;
+
+/*
 // Selecting elements
 const score0El = document.querySelector('#score--0');
 //  other way of selecting elements that only works by ID.
@@ -203,7 +214,7 @@ btnHold.addEventListener('click', function () {
 //
 
 // 86. Resetting the Game
-
+/*
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const score0El = document.querySelector('#score--0');
@@ -318,3 +329,4 @@ btnNew.addEventListener('click', init);
 
 // player0El.classList.add('player--active');
 // player1El.classList.remove('player--active');
+*/
